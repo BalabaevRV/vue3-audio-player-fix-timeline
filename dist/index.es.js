@@ -529,7 +529,7 @@ const _sfc_main = defineComponent({
       console.log("onAudioEnded");
       state.isPlaying = false;
       state.currentTime = state.totalTime;
-      audioProgress.value.style.width = `${audioProgressWrap.value.offsetWidth}px`;
+      audioProgress.value.style.width = `${audioProgressWrap.value.offsetWidth + 1}px`;
       clearTimer();
       emit("ended");
     };
